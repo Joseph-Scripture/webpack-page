@@ -1,11 +1,16 @@
 /* styles.css */
 body {
   background-color: #F8B259;
+  text-align: center;
 }
+
 nav{
     display: flex;
     justify-content: center;
     gap: 15px;
+    background-color: orangered;
+    height: 100px;
+    align-items: center;
 }
 button{
     background-color: blue;
@@ -16,4 +21,16 @@ button{
     font-weight: 500;
     border-radius: 8px;
 
+}
+.home-header{
+  font-weight: bold;
+  font-style: italic;
+}
+img{
+  width: 350px;
+  height: auto;
+}
+.p{
+  font-size: 50px;
+  font-weight: bold;
 }
