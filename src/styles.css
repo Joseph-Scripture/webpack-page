@@ -1,16 +1,20 @@
 /* styles.css */
 body {
   background-color: #F8B259;
-  text-align: center;
+  /* text-align: center; */
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
 }
 
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 15px;
     background-color: orangered;
     height: 100px;
     align-items: center;
+    
 }
 button{
     background-color: blue;
@@ -40,10 +44,49 @@ img{
   font-size: 60px;
   color:white;
 }
-
 .contact-div{
-  border: 1px solid white;
-  width: 40%;
-  text-align: center;
+  /* border: 1px solid white; */
+  width: 50%;
   margin: auto;
+}
+label{
+  display: block;
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 8px;
+}
+input{
+  width: 70%;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+  border: none;
+}
+input:focus, textarea:focus{
+  border: 2px solid blue;
+ 
+}
+textarea{
+  outline: none;
+  border: 1px solid;
+  border-radius: 15px;
+  width: 600px;
+  height: 350px;
+  padding: 16px;
+  font-size: 30px;
+}
+.homeImage{
+  width: 100%;
+  
+}
+.btn{
+  display: block;
+  margin-top: 25px;
+  margin-left: 18%;
+  width: 610px;
+  background-color: #F97A00;
+  font-size: 25px;
+
 }

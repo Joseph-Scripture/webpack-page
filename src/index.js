@@ -4,7 +4,6 @@ import {displayHome, displayAbout} from './pageDisplay';
 
 displayHome();
 
-
 document.querySelector('.home').addEventListener('click', () => {
     displayHome();
 });
