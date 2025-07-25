@@ -1,5 +1,7 @@
 import homeImage from "./images/homeImage.jpeg"
-import backgroundImage from './images/about.jpeg';
+import backgroundImage from './images/about.jpeg'
+import images from './images/images.jpeg'
+import second from './images/second.jpeg'
 // import { container } from "webpack";
 
 
@@ -39,6 +41,7 @@ export function displayHome(){
 
 }
 
+
 export function displayAbout(){
     emptyDiv.innerHTML = '';
     const body = document.body
@@ -63,6 +66,7 @@ export function displayAbout(){
     firstLabel.textContent = 'Email';
     const firstInput = document.createElement('input');
     firstInput.type = 'email'
+    firstInput.classList.add('first-input')
     firstInput.placeholder = 'Enter Your Email';
     // Appending elements into form
     formDetail.appendChild(firstLabel)
@@ -100,4 +104,51 @@ export function displayAbout(){
     emptyDiv.appendChild(newDiv)
 
     
+}
+export function displayMenu(){
+    
+    const body = document.body;
+    // body.innerHTML = '';
+    body.style = '';
+    emptyDiv.innerHTML = '';
+    body.style.backgroundColor = 'white';
+    body.style.textAlign = 'center';
+    // Mother Div
+    const menuDiv = document.createElement('div');
+    menuDiv.classList.add('menu-div');
+    // First Card to append in content div
+    const firstCard = document.createElement('div');
+    firstCard.classList.add('card-div')
+    const firstImage = document.createElement('img');
+    firstImage.src = images;
+    // header
+    const menuHeader = document.createElement('h2');
+    menuHeader.classList.add('menu-header')
+    menuHeader.textContent='Menu'
+    // p under first card
+    const firstParagraph = document.createElement('p');
+    firstParagraph.classList.add('first-menu-paragraph')
+
+    firstParagraph.textContent = "We don't just serve we design"
+
+    // Second Card
+
+    const secondDiv = document.createElement('div');
+    secondDiv.classList.add('second-div');
+    const secondImage = document.createElement('img');
+    secondImage.src = second;
+
+    secondDiv.appendChild(secondImage);
+   
+
+    // appending in respective divs
+    firstCard.appendChild(menuHeader);
+    firstCard.appendChild(firstImage);
+    firstCard.appendChild(firstParagraph);
+    
+    // Appending content in main div
+    emptyDiv.appendChild(firstCard);
+    emptyDiv.appendChild(secondDiv);
+
+
 }

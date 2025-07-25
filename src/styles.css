@@ -1,7 +1,5 @@
-/* styles.css */
 body {
   background-color: #F8B259;
-  /* text-align: center; */
   box-sizing: border-box;
   margin: 0;
   color: white;
@@ -44,8 +42,10 @@ img{
   font-size: 60px;
   color:white;
 }
+.first-input{
+  padding: 15px;
+}
 .contact-div{
-  /* border: 1px solid white; */
   width: 50%;
   margin: auto;
 }
@@ -90,3 +90,29 @@ textarea{
   font-size: 25px;
 
 }
+.menu-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+   border: 1px solid black;
+}
+ .menu-header{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 16px;
+  text-decoration: underline;
+  text-transform: uppercase;
+ }
+ p, h2{
+  color: black;
+ }
+ .card-div{
+ 
+ }
+ .first-menu-paragraph{
+  font-size: 32px;
+  font-weight: 400;
+ }

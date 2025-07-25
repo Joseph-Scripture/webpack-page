@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import {displayHome, displayAbout} from './pageDisplay';
+import {displayHome, displayAbout, displayMenu} from './pageDisplay';
 
 displayHome();
 
@@ -9,4 +9,7 @@ document.querySelector('.home').addEventListener('click', () => {
 });
 document.querySelector('.about').addEventListener('click', () =>{
     displayAbout();
+})
+document.querySelector('.menu').addEventListener('click', () => {
+    displayMenu()
 })
