@@ -34,3 +34,16 @@ img{
   font-size: 50px;
   font-weight: bold;
 }
+.contact-p, .email{
+  font-weight: bolder;
+ 
+  font-size: 60px;
+  color:white;
+}
+
+.contact-div{
+  border: 1px solid white;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}

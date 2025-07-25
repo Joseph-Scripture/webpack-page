@@ -1,4 +1,6 @@
 import download from "./images/new.jpeg"
+import backgroundImage from './images/about.jpeg';
+// import { container } from "webpack";
 
 
 const homeBtn = document.querySelector('.home');
@@ -7,14 +9,11 @@ const menuBtn = document.querySelector('.menu');
 const emptyDiv = document.querySelector('#container')
 
 
-
-   
-// const image = document.createElement("img");
-// image.src = odinImage;
-   
-// document.body.appendChild(image);
-
 export function displayHome(){
+    const body = document.body;
+    body.style = ''
+    body.style.backgroundColor = '#F8B259';
+    body.style.textAlign = 'center';
     emptyDiv.innerHTML = '';
     const container = document.createElement('div')
     const header = document.createElement('h1')
@@ -37,4 +36,37 @@ export function displayHome(){
     // emptyDiv.appendChild(image)
 
 
+}
+
+export function displayAbout(){
+    emptyDiv.innerHTML = '';
+    const body = document.body
+    body.style.backgroundColor = 'transparent';
+    body.style.backgroundImage = `url(${backgroundImage})`
+    body.style.backgroundSize = 'cover';      
+    body.style.backgroundPosition = 'center'; 
+    body.style.backgroundRepeat = 'no-repeat';
+    body.style.backgroundAttachment = 'fixed';
+
+    // Creating Contact
+    const contact = document.createElement('p');
+    contact.textContent = 'Send Us a Message';
+    contact.classList.add('contact-p')
+    const newDiv = document.createElement('div')
+    const email = document.createElement('p');
+    email.classList.add('email');
+    email.textContent = 'example@gmail.com';
+   
+
+   
+    
+    newDiv.classList.add('contact-div')
+    
+    newDiv.appendChild(contact)
+    newDiv.appendChild(email)
+    
+
+    emptyDiv.appendChild(newDiv)
+
+    
 }
